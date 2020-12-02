@@ -1,11 +1,13 @@
 package day1
 
 part1[x] {
+    some i, j
     amounts[i]+amounts[j] == 2020
     x := amounts[i]*amounts[j]
 }
 
 part2[x] {
+    some i, j, k
     amounts[i]+amounts[j]+amounts[k] == 2020
     x := amounts[i]*amounts[j]*amounts[k]
 }
