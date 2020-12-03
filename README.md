@@ -9,3 +9,7 @@ Just compute the cross-product and be done with it. The second part took approxi
 # Day 2
 
 Nothing special here though this is probably the first time someone has defined a function called `xor` in Rego! It would have been nice to have a built-in function to count the number of substring occurrences.
+
+# Day 3
+
+After turning the input into a grid, we can find all the tree positions by iterating over the rows and using simple algebra to calculate the column index.
