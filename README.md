@@ -13,3 +13,7 @@ Nothing special here though this is probably the first time someone has defined 
 # Day 3
 
 After turning the input into a grid, we can find all the tree positions by iterating over the rows and using simple algebra to calculate the column index.
+
+# Day 4
+
+The logic to validate the passport records is concise and readable. Moreover, given the helper rules for the solution, interesting ad-hoc queries could be implemented without much effort. The nature of the problem is a great fit for Rego (similar to Day 1).
