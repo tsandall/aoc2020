@@ -17,3 +17,7 @@ After turning the input into a grid, we can find all the tree positions by itera
 # Day 4
 
 The logic to validate the passport records is concise and readable. Moreover, given the helper rules for the solution, interesting ad-hoc queries could be implemented without much effort. The nature of the problem is a great fit for Rego (similar to Day 1).
+
+# Day 5
+
+This one was more fun. I didn't immediately make the connection between the characters and the binary representation of the row/column number (e.g., "RLR" => 101 => 5). I ended up encoding the rows and columns into trees and then mapping the characters to lookups in the tree. In retrospect, the binary representation is obvious.
