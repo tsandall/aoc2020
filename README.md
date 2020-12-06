@@ -21,3 +21,7 @@ The logic to validate the passport records is concise and readable. Moreover, gi
 # Day 5
 
 This one was more fun. I didn't immediately make the connection between the characters and the binary representation of the row/column number (e.g., "RLR" => 101 => 5). I ended up encoding the rows and columns into trees and then mapping the characters to lookups in the tree. In retrospect, the binary representation is obvious.
+
+# Day 6
+
+Similar to Day 1, once the input was parsed the solution fell out immediately. Initially the input was parsed into nested sets however that produced an incorrect answer when multiple groups (from the input) had the same responses. The fix was to simply parse the input into an array (of sets of sets.)
