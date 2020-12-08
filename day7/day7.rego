@@ -44,15 +44,9 @@ count_upto_8_nested_bags[x] = result {
 }
 
 contains := {parent: children |
-    [raw_parent, raw_children] := split(lines[_], " contain ")
-    parent := trim_suffix(raw_parent, " bags")
-    children := {s2 |
-        raw_child := trim_left(trim_right(split(raw_children, ",")[_], ",."), " ")
-        s := substring(raw_child, 2, -1)
-        s2 := substring(s, 0, indexof(s, " bag"))
-        s2 != "no other"
-    }
-}
+    some parent
+    contains_n[parent]
+    children := {c | contains_n[parent][[_, c]]}}
 
 contains_n := {parent: children |
     [raw_parent, raw_children] := split(lines[_], " contain ")
