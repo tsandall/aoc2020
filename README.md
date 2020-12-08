@@ -25,3 +25,7 @@ This one was more fun. I didn't immediately make the connection between the char
 # Day 6
 
 Similar to Day 1, once the input was parsed the solution fell out immediately. Initially the input was parsed into nested sets however that produced an incorrect answer when multiple groups (from the input) had the same responses. The fix was to simply parse the input into an array (of sets of sets.)
+
+# Day 7
+
+Finally, recursion. Part 1 is handled with `graph.reachable`. However, Part 2 calls for a recursive function that calculates the number of bags contained (transitively) within each bag. Since we cannot construct a nested object of arbitrary depth, we cannot use `walk`. Graph traversal built-in functions would be useful here.
