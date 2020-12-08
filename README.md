@@ -29,3 +29,14 @@ Similar to Day 1, once the input was parsed the solution fell out immediately. I
 # Day 7
 
 Finally, recursion. Part 1 is handled with `graph.reachable`. However, Part 2 calls for a recursive function that calculates the number of bags contained (transitively) within each bag. Since we cannot construct a nested object of arbitrary depth, we cannot use `walk`. Graph traversal built-in functions would be useful here.
+
+# Day 8
+
+Alas, I can't see a clever trick for this one. I had to cheat and use `http.send` to recurse 😱. To run:
+
+```
+# turn off logging as it will be very loud
+opa run -s day8/day8.rego -l=error
+```
+
+Then you can evaluate `part1` and `part2` to produce the answers. Part 2 takes about a minute to run.
