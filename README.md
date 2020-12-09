@@ -40,3 +40,11 @@ opa run -s day8/day8.rego -l=error
 ```
 
 Then you can evaluate `part1` and `part2` to produce the answers. Part 2 takes about a minute to run.
+
+# Day 9
+
+The `array.slice` built-in function came in handy here as the rules can easily create the window of numbers to inspect. Part 2 took about a minute to return on my machine. Given the size of the cross-product (~1M elements), this is not surprising.
+
+# Day 10
+
+More `http.send` trickery for Part 2. This time HTTP response caching was important for memoizing the results of the calculation.
