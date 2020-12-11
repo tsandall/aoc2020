@@ -48,3 +48,7 @@ The `array.slice` built-in function came in handy here as the rules can easily c
 # Day 10
 
 More `http.send` trickery for Part 2. This time HTTP response caching was important for memoizing the results of the calculation.
+
+# Day 11
+
+This was a rough one. While we express the core logic nicely, there are two problems. First of all, we don't know how long to iterate for before the game reaches a stable state. We could recurse like in the previous days, however, the bigger problem is the runtime. Part 2 takes about 2 minutes per iteration. I ended up cheating and implementing the solution in Go to determine how many iterations were required and then just hardcoding that many calls to the `gen1` and `gen2` function into the rule.
